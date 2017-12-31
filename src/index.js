@@ -15,7 +15,6 @@ export default function FullHeightComponent(WrappedComponent, elements = []) {
           if (el) el.style.height = '100%'
         })
 
-        // we can remove this once we're on Next.js@4.3.0
         if (document.body.firstChild.style) {
           document.body.firstChild.style.height = '100%'
         }
@@ -29,7 +28,6 @@ export default function FullHeightComponent(WrappedComponent, elements = []) {
           if (el) el.style.height = 'initial'
         })
 
-        // we can remove this once we're on Next.js@4.3.0
         if (document.body.firstChild.style) {
           document.body.firstChild.style.height = ''
         }
