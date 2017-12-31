@@ -1,0 +1,52 @@
+{
+  "name": "full-height-hoc",
+  "version": "0.2.0",
+  "description": "Height 100% HOC",
+  "main": "./dist/full-height-hoc.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanford/full-height-hoc.git"
+  },
+  "homepage": "https://github.com/hanford/full-height-hoc",
+  "bugs": "https://github.com/hanford/full-height-hoc/issues",
+  "scripts": {
+    "build": "webpack -p",
+    "prepare": "npm run build"
+  },
+  "authors": [
+    "Jack Hanford"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "~6.24.1",
+    "babel-loader": "~6.4.1",
+    "babel-preset-env": "~1.5.2",
+    "babel-preset-react": "~6.24.1",
+    "babel-preset-stage-0": "~6.24.1",
+    "react": "~15.5.3",
+    "react-dom": "~15.5.3",
+    "webpack": "~2.3.3"
+  },
+  "dependencies": {
+    "global": "~4.3.2",
+    "hoist-non-react-statics": "~2.3.1"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "tags": [
+    "react",
+    "height 100%",
+    "hoc",
+    "flexbox",
+    "flex height"
+  ],
+  "keywords": [
+    "react",
+    "height 100%",
+    "hoc",
+    "flexbox",
+    "flex height"
+  ]
+}
