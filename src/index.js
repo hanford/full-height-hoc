@@ -2,11 +2,13 @@ import React, { PureComponent } from 'react'
 import hoistNonReactStatic from 'hoist-non-react-statics'
 import document from 'global/document'
 
-export default function FullHeightComponent (WrappedComponent) {
-  class FullHeightWrapper extends PureComponent {
-    elements = ['html', 'body', '#__next', '#root', '[data-reactroot]']
+const defaults = ['html', 'body', '#__next', '#root', '[data-reactroot]']
 
-    componentDidMount() {
+export default function FullHeightComponent(WrappedComponent, elements = []) {
+  class FullHeightWrapper extends PureComponent {
+    elements = [ ...defaults, ...elements ]
+
+    componentDidMount () {
       if (document.querySelector) {
         this.elements.forEach((tag) => {
           const el = document.querySelector(tag)
@@ -20,7 +22,7 @@ export default function FullHeightComponent (WrappedComponent) {
       }
     }
 
-    componentWillUnmount() {
+    componentWillUnmoun () {
       if (document.querySelector) {
         this.elements.forEach((tag) => {
           const el = document.querySelector(tag)
