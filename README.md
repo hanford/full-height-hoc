@@ -1,6 +1,6 @@
 ## full-height-hoc
 
-Defer expensive react rendering with [rAF](https://www.npmjs.com/package/raf)
+Loop over DOM elements setting/unsetting height to 100% so you can use `flexbox` height
 
 <br />
 
@@ -18,13 +18,21 @@ import withFullHeight from 'full-height-hoc'
 
 class RandomComp extends Component {
   ...
-
-  render () {
-    ...
-  }
 }
 
-export default withFullHeight(RandomComp, ['#my-selectors', 'html'])
+export default withFullHeight(RandomComp)
+```
+
+Or with your own list of selectors
+```js
+import React, { Component } from 'react'
+import withFullHeight from 'full-height-hoc'
+
+class RandomComp extends Component {
+  ...
+}
+
+export default withFullHeight(RandomComp, ['section', 'body', '.content', '#container'])
 ```
 
 MIT © [Jack Hanford](http://jackhanford.com)
