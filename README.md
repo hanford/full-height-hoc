@@ -2,8 +2,6 @@
 
 Loop over DOM elements setting/unsetting height to 100% so you can use `flexbox` height
 
-<br />
-
 ## Install
 
 ```
