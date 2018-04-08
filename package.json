@@ -1,6 +1,6 @@
 {
   "name": "full-height-hoc",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Height 100% HOC",
   "main": "./dist/full-height-hoc.min.js",
   "repository": {
