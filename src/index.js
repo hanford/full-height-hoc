@@ -21,7 +21,7 @@ export default function FullHeightComponent(WrappedComponent, elements = []) {
       }
     }
 
-    componentWillUnmoun () {
+    componentWillUnmount () {
       if (document.querySelector) {
         this.elements.forEach((tag) => {
           const el = document.querySelector(tag)
